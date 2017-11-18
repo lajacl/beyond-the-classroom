@@ -7,6 +7,7 @@ import java.util.Map;
  */
 
 public class Student {
+    private String parent_id;
     private String username;
     private String password;
     private int grade;
@@ -17,13 +18,22 @@ public class Student {
 
     public Student(){}
 
-    public Student(String username, String password, int grade, int lexile_score, Map<String, Boolean> books, Map<String, Boolean> schedule) {
+    public Student(String parent_id, String username, String password, int grade, int lexile_score, Map<String, Boolean> books, Map<String, Boolean> schedule) {
+        this.parent_id = parent_id;
         this.username = username;
         this.password = password;
         this.grade = grade;
         this.lexile_score = lexile_score;
         this.books = books;
         this.schedule = schedule;
+    }
+
+    public String getParent_id() {
+        return parent_id;
+    }
+
+    public void setParent_id(String parent_id) {
+        this.parent_id = parent_id;
     }
 
     public String getUsername() {
