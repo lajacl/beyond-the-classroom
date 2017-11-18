@@ -7,6 +7,7 @@
     tools:context="us.bytc.beyondtheclassroom.UserLoginActivity"
     >
 
+    <!--Company Logo at the top of the screen-->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
@@ -14,6 +15,9 @@
         android:contentDescription="@string/app_name"
         android:id="@+id/companyLogoInLogin"
         />
+
+    <!-- Linear Layout that contains the main user interface for logging in and keeps these views
+         in the center of the parent vertically and sets it below the company logo-->
     <LinearLayout
         android:id="@+id/loginParentLinearLayout"
         android:layout_width="wrap_content"
@@ -24,6 +28,8 @@
         android:layout_centerInParent="true"
         >
 
+        <!-- The user types in there username to log into the database; sets the hint text, the
+             user input and the line below to black-->
         <EditText
             android:id="@+id/loginUserNameEditText"
             android:layout_width="match_parent"
@@ -35,6 +41,9 @@
             android:textColorHint="@android:color/black"
             android:drawableLeft="@drawable/login_username_image"/>
 
+        <!-- The user types in there password associated with there username to access there
+             personal items from the database; sets the hint text, the user input and the line
+             below to black-->
         <EditText
             android:id="@+id/loginPasswordEditText"
             android:layout_width="match_parent"
@@ -47,12 +56,16 @@
             android:textColorHint="@android:color/black"
             android:drawableLeft="@drawable/login_password_image"/>
 
+        <!-- Linear Layout that holds the forgot password button and login button in a horizontal
+             orientation-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
             android:orientation="horizontal">
 
+            <!-- TextView that will go to a support page to recover a user's password if the text
+                 is clicked; sets the color to a light blue-->
             <TextView
                 android:id="@+id/userForgotPasswordTextView"
                 android:layout_width="wrap_content"
@@ -61,6 +74,8 @@
                 android:text="@string/forgotPasswordText"
                 android:textColor="#208dd6" />
 
+            <!-- Button that when clicked sends the user to their specific home screen; uses a custom
+                 background shape in the drawable folder-->
             <Button
                 android:id="@+id/userLoginButton"
                 android:layout_width="wrap_content"
@@ -73,6 +88,8 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- If the user does not have an account then they click this and it will take them to a
+         screen where they can sign up; uses custom background file in the drawable for the border-->
     <Button
         android:id="@+id/createNewUserAccountButton"
         android:layout_width="wrap_content"
