@@ -17,9 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ParentSignUpActivity" />
-        <activity android:name=".ParentLoginActivity" />
         <activity android:name=".TeacherSignUpActivity" />
-        <activity android:name=".TeacherLoginActivity"></activity>
+        <activity android:name=".UserLoginActivity"></activity>
     </application>
 
 </manifest>
