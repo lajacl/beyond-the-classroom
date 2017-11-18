@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateAccountOptionsActivity" />
-        <activity android:name=".addChildActivity"></activity>
+        <activity android:name=".addChildActivity" />
+        <activity android:name=".ParentHomeScreen"></activity>
     </application>
 
 </manifest>
