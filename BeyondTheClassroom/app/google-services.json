@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12858772239",
+    "firebase_url": "https://beyondtheclassroom-a98d3.firebaseio.com",
+    "project_id": "beyondtheclassroom-a98d3",
+    "storage_bucket": "beyondtheclassroom-a98d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12858772239:android:65205a463c913ea0",
+        "android_client_info": {
+          "package_name": "us.bytc.beyondtheclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12858772239-o3g86n40cvenb7hkf0km421ma7de2it7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdeL0X3DcXsKGmnIQeyHBr7s4fjV3BACM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
