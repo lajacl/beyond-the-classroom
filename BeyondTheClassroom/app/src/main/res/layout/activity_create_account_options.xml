@@ -28,7 +28,10 @@
         android:padding="12dp"
         >
 
+        <!-- Schools use this to register a school for payment for students; uses custom background
+             from drawable folder and margin for spacing and visual benefits-->
         <Button
+            android:id="@+id/registerSchoolButtonOption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/registerSchoolOptionText"
@@ -36,7 +39,10 @@
             android:background="@drawable/roundedbutton"
             android:layout_margin="24dp"/>
 
+        <!-- Parents use this to register themselves and register a student; uses custom background
+             from drawable folder and margin for spacing and visual benefits-->
         <Button
+            android:id="@+id/registerParentButtonOption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/registerParentOptionText"
@@ -45,7 +51,10 @@
             android:layout_margin="24dp"
             />
 
+        <!-- Teachers use this to register themselves as teachers to get paid for teachign students;
+             uses custom background from drawable folder and margin for spacing and visual benefits-->
         <Button
+            android:id="@+id/registerTeacherButtonOption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/registerTeacherOptionText"
