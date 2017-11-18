@@ -1,5 +1,6 @@
 package us.bytc.beyondtheclassroom;
 
+
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -14,27 +15,31 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import android.content.Context;
 
 public class UserLoginActivity extends AppCompatActivity {
-    private EditText usernameEditText;
-    private EditText passwordEditText;
+    private EditText loginUserNameEditText;
+    private EditText loginPasswordEditText;
 
-    private Button loginBtn;
-    private Button createAccountBtn;
+    private Button userLoginButton;
+    private Button createNewUserAccountButton;
 
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListener;
+
+
+    private Context mContext = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
-        usernameEditText = (EditText) findViewById(R.id.editTextUsername);
-        passwordEditText = (EditText) findViewById(R.id.editTextPassword);
+        loginUserNameEditText = (EditText) findViewById(R.id.loginUserNameEditText);
+        loginPasswordEditText = (EditText) findViewById(R.id.loginPasswordEditText);
 
-        loginBtn = (Button) findViewById(R.id.btnLogin);
-        createAccountBtn = (Button) findViewById(R.id.btnCreateAccount);
+        userLoginButton = (Button) findViewById(R.id.userLoginButton);
+        createNewUserAccountButton = (Button) findViewById(R.id.createNewUserAccountButton);
 
         auth = FirebaseAuth.getInstance();
 
@@ -49,17 +54,17 @@ public class UserLoginActivity extends AppCompatActivity {
             }
         };
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        userLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signIn();
             }
         });
 
-        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+        createNewUserAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UserLoginActivity.this, ChooseAccountActivity.class));
+                startActivity(new Intent(UserLoginActivity.this, CreateAccountOptionsActivity.class));
             }
         });
 
@@ -74,8 +79,8 @@ public class UserLoginActivity extends AppCompatActivity {
 
     //gets user input from view
     private void signIn() {
-        String username = usernameEditText.getText().toString();
-        String password = passwordEditText.getText().toString();
+        String username = loginUserNameEditText.getText().toString();
+        String password = loginPasswordEditText.getText().toString();
 
         //make sure a username and password were entered
         if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
@@ -94,5 +99,13 @@ public class UserLoginActivity extends AppCompatActivity {
                 }
             });
         }
+        Button createAccountButton = findViewById(R.id.createNewUserAccountButton);
+        createAccountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, CreateAccountOptionsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

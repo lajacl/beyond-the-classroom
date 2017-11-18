@@ -1,11 +1,26 @@
 <resources>
     <string name="app_name">Beyond The Classroom</string>
-    <string name="username_hint">Username</string>
-    <string name="password_hint">Password</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="login_btn">Login</string>
-    <string name="create_account_btn">Create a New Account</string>
-    <string name="account_choice_text">Which type of account do you want to create:</string>
-    <string name="parent_btn">Parent</string>
-    <string name="teacher_btn">Teacher</string>
+    <string name="userNameEditTextHint">Username</string>
+    <string name="passwordEditTextHint">Password</string>
+    <string name="forgotPasswordText">Forgot Password?</string>
+    <string name="loginButtonText">Login</string>
+    <string name="createNewAccountButtonText">Create a New Account</string>
+
+    <string name="registerSchoolOptionText">Register My School</string>
+    <string name="registerParentOptionText">I Am A Parent</string>
+    <string name="registerTeacherOptionText">I Am A Teacher</string>
+
+    <string name="parentSignUpActivityTitle"><u>Parent SignUp:</u></string>
+    <string name="parentNameTextView">Your Name:</string>
+    <string name="parentEmailTextView">Email:</string>
+    <string name="parentPhoneNumberTextView">Phone Number:</string>
+    <string name="createPasswordTextView">Password:</string>
+    <string name="createPasswordMinimumLengthText">Minimum of 6 characters</string>
+    <string name="enterPasswordAgainTextView">Re-Enter Password:</string>
+    <string name="passwordRequirementsTextView">
+        \u2022 Must include at least one capitol letter.
+        \n\u2022 Must include at least one number.
+    </string>
+    <string name="registerButtonText"><b>Register!</b></string>
+
 </resources>
