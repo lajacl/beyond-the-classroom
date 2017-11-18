@@ -5,4 +5,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="login_btn">Login</string>
     <string name="create_account_btn">Create a New Account</string>
+    <string name="account_choice_text">Which type of account do you want to create:</string>
+    <string name="parent_btn">Parent</string>
+    <string name="teacher_btn">Teacher</string>
 </resources>

@@ -44,6 +44,7 @@ public class UserLoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!= null){
                     startActivity(new Intent(UserLoginActivity.this, BTCHomeScreen.class));
+                    UserLoginActivity.this.finish();
                 }
             }
         };
@@ -58,9 +59,10 @@ public class UserLoginActivity extends AppCompatActivity {
         createAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UserLoginActivity.this, ParentSignUpActivity.class));
+                startActivity(new Intent(UserLoginActivity.this, ChooseAccountActivity.class));
             }
         });
+
     }
 
     @Override
@@ -74,13 +76,11 @@ public class UserLoginActivity extends AppCompatActivity {
     private void signIn() {
         String username = usernameEditText.getText().toString();
         String password = passwordEditText.getText().toString();
-        Toast.makeText(UserLoginActivity.this, "User: " + username,Toast.LENGTH_SHORT).show();
-        Toast.makeText(UserLoginActivity.this, "Pass: " + password,Toast.LENGTH_SHORT).show();
 
         //make sure a username and password were entered
         if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
 
-            Toast.makeText(UserLoginActivity.this, "Please enter a username AND password",Toast.LENGTH_LONG).show();
+            Toast.makeText(UserLoginActivity.this, "Please enter a username and password",Toast.LENGTH_LONG).show();
 
         } else {
 
