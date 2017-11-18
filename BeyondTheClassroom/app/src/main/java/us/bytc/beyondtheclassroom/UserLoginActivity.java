@@ -15,12 +15,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import android.content.Context;
 
 public class UserLoginActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListener;
+//    private final FirebaseUser mUser = auth.getCurrentUser();
 
 
     private Context mContext = this;
@@ -38,7 +41,9 @@ public class UserLoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!= null){
-                    startActivity(new Intent(mContext, BTCHomeScreen.class));
+                    if(auth.getCurrentUser().getProviderId() == "parent")
+                        startActivity(new Intent(mContext, ParentHomeScreen.class));
+                    UserLoginActivity.this.finish();
                 }
             }
         };
@@ -75,8 +80,8 @@ public class UserLoginActivity extends AppCompatActivity {
 
         EditText loginUserNameEditText = findViewById(R.id.loginUserNameEditText);
         EditText loginPasswordEditText = findViewById(R.id.loginPasswordEditText);
-        String username = loginUserNameEditText.getText().toString();
-        String password = loginPasswordEditText.getText().toString();
+        String username = loginUserNameEditText.getText().toString().trim();
+        String password = loginPasswordEditText.getText().toString().trim();
 
         //make sure a username and password were entered
         if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
