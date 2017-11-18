@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Beyond The Classroom</string>
+    <string name="userNameEditTextHint">Username</string>
+    <string name="passwordEditTextHint">Password</string>
+    <string name="forgotPasswordText">Forgot Password?</string>
+    <string name="loginButtonText">Login</string>
+    <string name="createNewAccountButtonText">Create a New Account</string>
 </resources>
