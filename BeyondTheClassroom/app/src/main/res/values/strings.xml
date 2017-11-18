@@ -5,4 +5,7 @@
     <string name="forgotPasswordText">Forgot Password?</string>
     <string name="loginButtonText">Login</string>
     <string name="createNewAccountButtonText">Create a New Account</string>
+    <string name="registerSchoolOptionText">Register My School</string>
+    <string name="registerParentOptionText">I Am A Parent</string>
+    <string name="registerTeacherOptionText">I Am A Teacher</string>
 </resources>
