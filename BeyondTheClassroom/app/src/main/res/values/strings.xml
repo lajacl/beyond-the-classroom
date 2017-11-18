@@ -23,4 +23,11 @@
     </string>
     <string name="registerButtonText"><b>Register!</b></string>
 
+    <string name="addChildActivityTitle"><u>Add A Child:</u></string>
+    <string name="childNameTextView">Child\'s Name:</string>
+    <string name="childGradeTextView">Grade:</string>
+    <string name="childLexileNumberTextView">Lexile Number:</string>
+    <string name="lexileNumberExplanationTextView"><u>What is a lexile number?</u></string>
+    <string name="createStudentUserNameTextView">Create Student Username:</string>
+
 </resources>
