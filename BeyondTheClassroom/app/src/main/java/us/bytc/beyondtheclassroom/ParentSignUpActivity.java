@@ -1,5 +1,7 @@
 package us.bytc.beyondtheclassroom;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class ParentSignUpActivity extends AppCompatActivity {
     private FirebaseAuth auth;
 
+    private Context mContext = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,9 @@ public class ParentSignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 parentSignUp();
+
+                Intent intent = new Intent(mContext, addChildActivity.class);
+                startActivity(intent);
             }
         });
 
