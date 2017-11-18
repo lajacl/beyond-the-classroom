@@ -9,8 +9,7 @@ import java.util.Map;
 
 public class Parent {
     private String email;
-    private String first_name;
-    private String last_name;
+    private String name;
     private int payment_tier;
     private String phone;
     private float hours_left;
@@ -18,38 +17,28 @@ public class Parent {
 
     public Parent(){}
 
-    public Parent(String email, String first_name, String last_name, int payment_tier, String phone, float hours_left, Map<String, Boolean> students) {
+    public Parent(String email, String name, int payment_tier, String phone,
+                  float hours_left, Map<String, Boolean> students) {
         this.email = email;
-        this.first_name = first_name;
-        this.last_name = last_name;
+        this.name = name;
         this.payment_tier = payment_tier;
         this.phone = phone;
         this.hours_left = hours_left;
         this.students = students;
     }
 
-    public String getEmail() {
-        return email;
-    }
+    public String getEmail() { return email; }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getName() {
+        return name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
-    }
-
-    public String getLast_name() {
-        return last_name;
-    }
-
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getPayment_tier() {

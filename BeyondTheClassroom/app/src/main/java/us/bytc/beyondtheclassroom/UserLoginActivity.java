@@ -39,7 +39,6 @@ public class UserLoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!= null){
                     startActivity(new Intent(mContext, BTCHomeScreen.class));
-                    UserLoginActivity.this.finish();
                 }
             }
         };
