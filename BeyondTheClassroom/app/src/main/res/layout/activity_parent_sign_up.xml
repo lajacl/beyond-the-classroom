@@ -41,6 +41,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/parentNameEditText"
                 />
 
             <TextView
@@ -53,7 +54,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp" />
+                android:id="@+id/parentEmailEditText"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,7 +66,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp" />
+                android:id="@+id/parentPhoneNumberEditText"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -75,15 +76,16 @@
                 android:textSize="18sp" />
 
             <EditText
+                android:id="@+id/enterPasswordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/createPasswordMinimumLengthText"
-                android:textColorHint="#6d6e71" />
+                android:textColorHint="#6d6e71"
+                android:inputType="textPassword"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:text="@string/passwordRequirementsTextView"
                 android:textColor="#6d6e71"
                 android:textSize="14sp" />
@@ -96,14 +98,15 @@
                 android:textSize="18sp" />
 
             <EditText
+                android:id="@+id/reEnterPasswordEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp" />
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </ScrollView>
 
     <Button
+        android:id="@+id/createParentAccountButton"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
