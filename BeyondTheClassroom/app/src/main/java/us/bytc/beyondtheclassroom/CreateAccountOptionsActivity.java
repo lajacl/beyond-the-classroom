@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class CreateAccountOptionsActivity extends AppCompatActivity {
 
-    private Button registerParentButton;
+
 
     private Context mContext = this;
 
@@ -18,7 +18,7 @@ public class CreateAccountOptionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_options);
 
-        registerParentButton = findViewById(R.id.registerParentButtonOption);
+        Button registerParentButton = findViewById(R.id.registerParentButtonOption);
         registerParentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

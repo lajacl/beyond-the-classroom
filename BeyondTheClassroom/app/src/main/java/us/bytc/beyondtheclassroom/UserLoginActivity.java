@@ -9,7 +9,6 @@ import android.widget.Button;
 
 public class UserLoginActivity extends AppCompatActivity {
 
-    private Button createAccountButton;
 
     private Context mContext = this;
 
@@ -18,7 +17,7 @@ public class UserLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
-        createAccountButton = findViewById(R.id.createNewUserAccountButton);
+        Button createAccountButton = findViewById(R.id.createNewUserAccountButton);
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
