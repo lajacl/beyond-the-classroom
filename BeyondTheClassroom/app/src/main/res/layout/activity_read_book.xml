@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context="us.bytc.beyondtheclassroom.ReadBookActivity">
 
-
-
-
-
-
     <LinearLayout
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
@@ -65,4 +60,5 @@
         android:layout_marginBottom="165dp"
         android:layout_marginEnd="130dp"
         android:layout_marginRight="130dp" />
+
 </RelativeLayout>
