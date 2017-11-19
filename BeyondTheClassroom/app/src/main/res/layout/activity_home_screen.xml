@@ -8,24 +8,48 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:src="@drawable/btc_logo"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/app_name"/>
 
-    <!-- Place RecyclerView for book preview-->
+    <!-- Place book preview icon and author name and description-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="d1d3d4">
+        android:background="#d1d3d4">
 
         <ImageView
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:src="@drawable/stats_logo"
+            android:contentDescription="@string/statsTitle"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/schedule_logo"
+            android:contentDescription="@string/statsTitle"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/read_logo"
+            android:contentDescription="@string/statsTitle"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/library_logo"
+            android:contentDescription="@string/statsTitle"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/more_logo"
             android:contentDescription="@string/statsTitle"/>
 
     </LinearLayout>
