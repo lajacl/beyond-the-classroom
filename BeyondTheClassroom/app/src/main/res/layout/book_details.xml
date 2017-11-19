@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/currentBookHeader"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lexileLevelLabel"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lexileLevelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:maxHeight="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/bookCoverContentDescription"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/titleLabel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/authorLabel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/descriptionLabel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

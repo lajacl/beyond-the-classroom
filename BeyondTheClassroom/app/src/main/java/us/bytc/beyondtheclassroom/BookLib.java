@@ -1,13 +1,10 @@
 package us.bytc.beyondtheclassroom;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +12,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ListIterator;
+
+import us.bytc.beyondtheclassroom.models.Book;
 
 
 /**

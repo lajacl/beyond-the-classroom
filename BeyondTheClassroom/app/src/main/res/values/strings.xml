@@ -39,7 +39,23 @@
 
     <!-- HomeScreen Text-->
     <string name="statsTitle">Stats</string>
+    <string name="currentBookHeader">Your Current Book:</string>
+    <string name="bookCoverContentDescription">Book Cover Art</string>
+    <string name="lexileLevelLabel">Lexile Level:</string>
+    <string name="titleLabel">Title:</string>
+    <string name="authorLabel">Author:</string>
+    <string name="descriptionLabel">Description:</string>
 
+    <string name="currentBookLexileLevel">970L</string>
+    <string name="currentBookImageLink">
+        https://en.wikipedia.org/wiki/File:Houghton_AC85_B9345_911s_-_Secret_Garden,_1911_-_cover.jpg
+    </string>
+    <string name="currentBookTitle">The Secret Garden</string>
+    <string name="currentBookAuthor">Frances Hodgson Burnett</string>
+    <string name="currentBookDescription">
+        Ten-year-old Mary comes to live in a lonely house on the Yorkshire moors and discovers an
+        invalid cousin and the mysteries of a locked garden.
+    </string>
 
     <!-- logout text-->
     <string name="logoutText">Logout</string>
