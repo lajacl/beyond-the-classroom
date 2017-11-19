@@ -5,20 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.bytc.beyondtheclassroom.LibraryActivity">
-
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/btc_logo"/>
+    tools:context="us.bytc.beyondtheclassroom.LibraryActivity"
+    android:padding="20dp">
 
     <ListView
         android:id="@+id/libraryListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     </ListView>
 
