@@ -42,8 +42,6 @@ public class HomeScreenActivity extends AppCompatActivity implements LoadImageTa
 
         new LoadImageTask(this).execute(
                 "http://books.google.com/books/content?id=84A2AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
-//        ImageView bookCoverImageView = findViewById(R.id.bookCoverImageView);
-//        bookCoverImageView.setImageDrawable(LoadImageFromWebOperations(getResources().getString(R.string.currentBookImageLink)));
 
         TextView titleTextView = findViewById(R.id.titleTextView);
         titleTextView.setText(R.string.currentBookTitle);
@@ -64,14 +62,5 @@ public class HomeScreenActivity extends AppCompatActivity implements LoadImageTa
     @Override
     public void onError() {
         Toast.makeText(this, "Problem Loading Book Cover Art !", Toast.LENGTH_SHORT).show();
-    }
-
-    public static Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            return Drawable.createFromStream(is, "src name");
-        } catch (Exception e) {
-            return null;
-        }
     }
 }
