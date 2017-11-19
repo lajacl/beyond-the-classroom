@@ -3,16 +3,12 @@ package us.bytc.beyondtheclassroom;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.InputStream;
-import java.net.URL;
 
 public class HomeScreenActivity extends AppCompatActivity implements LoadImageTask.Listener {
 
@@ -55,7 +51,7 @@ public class HomeScreenActivity extends AppCompatActivity implements LoadImageTa
 
     @Override
     public void onImageLoaded(Bitmap bitmap) {
-        ImageView bookCoverImageView = findViewById(R.id.bookCoverImageView);
+        ImageView bookCoverImageView = findViewById(R.id.cardBookCoverImageView);
         bookCoverImageView.setImageBitmap(bitmap);
     }
 
