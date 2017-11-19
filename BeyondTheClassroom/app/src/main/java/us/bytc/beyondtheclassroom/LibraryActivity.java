@@ -25,24 +25,28 @@ public class LibraryActivity extends AppCompatActivity {
         Book book = new Book();
         book.setTitle("The Secret Garden");
         book.setAuthor("Frances Hodgson Burnett");
+        book.setBookReference(R.drawable.book0);
         book.setImageLink("http://books.google.com/books/content?id=84A2AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book);
 
         Book book2 = new Book();
         book2.setTitle("Bees Like Flowers");
         book2.setAuthor("Rebecca Bielawski");
+        book.setBookReference(R.drawable.book1);
         book2.setImageLink("http://books.google.com/books/content?id=Y56aCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book2);
 
         Book book3 = new Book();
         book3.setTitle("Rootabaga Stories");
         book3.setAuthor("Carl Sandburg");
+        book.setBookReference(R.drawable.book2);
         book3.setImageLink("http://books.google.com/books/content?id=EEMeAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book3);
 
         Book book4 = new Book();
         book4.setTitle("The Cricket on the Hearth");
         book4.setAuthor("Charles Dickens");
+        book.setBookReference(R.drawable.book3);
         book4.setImageLink("http://books.google.com/books/content?id=kykEAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book4);
 

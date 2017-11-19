@@ -20,6 +20,7 @@ public class Book {
     //@JsonProperty("image_url")
     private String imageLink;
     private String webReaderLink;
+    private int bookReference;
 
     public String getTitle() {
         return title;
@@ -99,6 +100,14 @@ public class Book {
 
     public void setWebReaderLink(String webReaderLink) {
         this.webReaderLink = webReaderLink;
+    }
+
+    public int getBookReference() {
+        return bookReference;
+    }
+
+    public void setBookReference(int bookReference) {
+        this.bookReference = bookReference;
     }
 }
 
