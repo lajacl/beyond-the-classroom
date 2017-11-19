@@ -19,8 +19,19 @@ public class HomeScreenActivity extends AppCompatActivity implements LoadImageTa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        ImageView moreButtonImageView = findViewById(R.id.homeScreenMoreButton);
-        moreButtonImageView.setOnClickListener(new View.OnClickListener() {
+        showBook();
+
+        ImageView toLibraryScreen = findViewById(R.id.homeScreenLibraryButton);
+        toLibraryScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, LibraryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView toMoreScreen = findViewById(R.id.homeScreenMoreButton);
+        toMoreScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, MoreScreenActivity.class);
@@ -28,7 +39,33 @@ public class HomeScreenActivity extends AppCompatActivity implements LoadImageTa
             }
         });
 
-        showBook();
+        ImageView toReadScreen = findViewById(R.id.homeScreenReadButton);
+        toReadScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, ReadBookActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView toScheduleScreen = findViewById(R.id.homeScreenScheduleButton);
+        toScheduleScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, ScheduleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView toStatsScreen = findViewById(R.id.homeScreenStatsButton);
+        toStatsScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, StatsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     // populate book details to view

@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.bytc.beyondtheclassroom.LibraryActivity"
-    >
+    tools:context="us.bytc.beyondtheclassroom.StatsActivity">
 
-    <ListView
-        android:id="@+id/libraryListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true" android:padding="20dp">
-
-    </ListView>
     <LinearLayout
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
@@ -24,35 +15,35 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/libraryScreenStatsButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:contentDescription="@string/statsTitle"
-            android:src="@drawable/stats_logo"/>
-
-        <ImageView
-            android:id="@+id/libraryScreenScheduleButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:contentDescription="@string/statsTitle"
-            android:src="@drawable/schedule_logo"/>
-
-        <ImageView
-            android:id="@+id/libraryScreenReadButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:contentDescription="@string/statsTitle"
-            android:src="@drawable/read_logo"/>
-
-        <ImageView
-            android:id="@+id/libraryScreenBackButton"
+            android:id="@+id/statsScreenGoHomeButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"
             android:src="@drawable/gohome_icon"/>
 
         <ImageView
-            android:id="@+id/libraryScreenMoreButton"
+            android:id="@+id/statsScreenScheduleButton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/statsTitle"
+            android:src="@drawable/schedule_logo"/>
+
+        <ImageView
+            android:id="@+id/statsScreenReadButton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/statsTitle"
+            android:src="@drawable/read_logo"/>
+
+        <ImageView
+            android:id="@+id/statsScreenLibraryButton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/statsTitle"
+            android:src="@drawable/library_logo"/>
+
+        <ImageView
+            android:id="@+id/statsScreenMoreButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"

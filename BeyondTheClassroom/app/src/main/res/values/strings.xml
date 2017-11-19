@@ -62,5 +62,8 @@
     <string name="currentBookLabel">Currently Reading:</string>
 
     <!-- logout text-->
-    <string name="logoutText">Logout</string>
+    <string name="logoutText"><b>Logout</b></string>
+
+
+    <string name="scheduleTodayText"><b>Today:</b></string>
 </resources>
