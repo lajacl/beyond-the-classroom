@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Text for the LoginActivity-->
-    <string name="app_name">Beyond The Classroom</string>
+    <string name="app_name">BYTC</string>
     <string name="userNameEditTextHint">Username</string>
     <string name="passwordEditTextHint">Password</string>
     <string name="forgotPasswordText">Forgot Password?</string>
