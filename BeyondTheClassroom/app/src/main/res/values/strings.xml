@@ -57,6 +57,9 @@
         invalid cousin and the mysteries of a locked garden.
     </string>
 
+    <!-- HomeScreen Text-->
+    <string name="bookCardDescription">Book Details</string>
+
     <!-- logout text-->
     <string name="logoutText">Logout</string>
 </resources>
