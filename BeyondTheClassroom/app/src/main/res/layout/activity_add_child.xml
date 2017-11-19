@@ -84,12 +84,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/createStudentUserNameTextView"
+                android:text="@string/enterEmailTextView"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/childPasswordEditText"
+                android:id="@+id/childEmailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -131,7 +131,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/createParentAccountButton"
+        android:id="@+id/createChildAccountButton"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

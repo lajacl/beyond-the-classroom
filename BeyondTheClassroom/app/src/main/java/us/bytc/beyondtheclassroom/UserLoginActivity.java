@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,13 +16,16 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import android.content.Context;
 
 public class UserLoginActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
-    private FirebaseAuth.AuthStateListener authListener;
+    private DatabaseReference mDatabaseReference = FirebaseDatabase.getInstance().getReference();
+    private FirebaseDatabase mFirebaseDatabase = FirebaseDatabase.getInstance();
 //    private final FirebaseUser mUser = auth.getCurrentUser();
 
 
@@ -34,25 +36,12 @@ public class UserLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
-        BookLib lib = new BookLib();
-        for(book : lib.Get_books()) {
-            Log.d("BOOKS","Book Search Results:\n" + book);
-        }
-
         auth = FirebaseAuth.getInstance();
 
-        //switch view when login is detected
-        authListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                if(firebaseAuth.getCurrentUser()!= null){
-                    if(auth.getCurrentUser().getProviderId() == "parent")
-                        startActivity(new Intent(mContext, ParentHomeScreen.class));
-                    UserLoginActivity.this.finish();
-                }
-            }
-        };
-
+        if (auth.getCurrentUser() != null){
+                Intent intent = new Intent(mContext, HomeScreenActivity.class);
+                startActivity(intent);
+        }
 
         Button userLoginButton = findViewById(R.id.userLoginButton);
         userLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -73,12 +62,6 @@ public class UserLoginActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        auth.addAuthStateListener(authListener);
-    }
 
     //gets user input from view
     private void signIn() {
@@ -101,6 +84,8 @@ public class UserLoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(!task.isSuccessful()){
                         Toast.makeText(UserLoginActivity.this, "Unable to Login",Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(mContext, HomeScreenActivity.class);
+                            startActivity(intent);
                     }
                 }
             });
