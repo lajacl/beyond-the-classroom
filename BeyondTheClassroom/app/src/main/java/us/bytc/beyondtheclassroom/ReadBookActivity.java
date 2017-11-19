@@ -2,14 +2,19 @@ package us.bytc.beyondtheclassroom;
 
 import android.content.Context;
 import android.content.Intent;
+import android.gesture.GestureOverlayView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.StackView;
+import android.widget.ViewSwitcher;
 
 public class ReadBookActivity extends AppCompatActivity {
 
     private Context mContext = this;
+
+    private ViewSwitcher bookScroller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,5 +65,21 @@ public class ReadBookActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        bookScroller = findViewById(R.id.bookPageSwitcher);
+        bookScroller.setOnTouchListener(new OnSwipeTouchListener(mContext){
+            public void onSwipeRight() {
+                bookScroller.showNext();
+            }
+            public void onSwipeLeft() {
+                bookScroller.showPrevious();
+            }
+
+        });
+
+
+
+
     }
 }

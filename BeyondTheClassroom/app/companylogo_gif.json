@@ -1,0 +1,5 @@
+{
+ "logogif" : {
+        "logoLocation": "../src/main/res/drawable/company_logo.gif"
+    }
+}
