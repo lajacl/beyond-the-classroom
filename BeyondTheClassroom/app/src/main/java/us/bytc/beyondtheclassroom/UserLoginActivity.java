@@ -83,9 +83,10 @@ public class UserLoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(!task.isSuccessful()){
                         Toast.makeText(UserLoginActivity.this, "Unable to Login",Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(mContext, HomeScreenActivity.class);
-                            startActivity(intent);
+
                     }
+                    Intent intent = new Intent(mContext, HomeScreenActivity.class);
+                    startActivity(intent);
                 }
             });
         }

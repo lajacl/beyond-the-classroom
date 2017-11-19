@@ -39,4 +39,8 @@
 
     <!-- HomeScreen Text-->
     <string name="statsTitle">Stats</string>
+
+
+    <!-- logout text-->
+    <string name="logoutText">Logout</string>
 </resources>

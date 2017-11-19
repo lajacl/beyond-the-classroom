@@ -12,7 +12,7 @@
         <activity
             android:name=".ParentSignUpActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TeacherSignUpActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -38,7 +38,8 @@
         <activity
             android:name=".HomeScreenActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name=".MoreScreenActivity"></activity>
     </application>
 
 </manifest>
