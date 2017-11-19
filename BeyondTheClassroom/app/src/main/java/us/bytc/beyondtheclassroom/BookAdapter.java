@@ -6,7 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -16,7 +19,7 @@ import us.bytc.beyondtheclassroom.models.Book;
  * Created by LaVette_2 on 11/19/2017.
  */
 
-public class BookAdapter extends ArrayAdapter<Book> {
+public class BookAdapter extends ArrayAdapter<Book>{
     private Activity activity;
     private ArrayList<Book> bookList;
     private static LayoutInflater inflater = null;
@@ -47,12 +50,14 @@ public class BookAdapter extends ArrayAdapter<Book> {
     }
 
     public static class ViewHolder {
+        public ImageView cardbookCoverImageView;
         public TextView cardLabelTextView;
         public TextView cardTitleTextView;
         public TextView cardAuthorTextView;
 
     }
 
+    //create a view for each item in the list of books
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
         final ViewHolder holder;
@@ -61,9 +66,10 @@ public class BookAdapter extends ArrayAdapter<Book> {
                 view = inflater.inflate(R.layout.library_book_card, null);
                 holder = new ViewHolder();
 
-                holder.cardLabelTextView = (TextView) view.findViewById(R.id.cardLabelTextView);
-                holder.cardTitleTextView = (TextView) view.findViewById(R.id.cardTitleTextView);
-                holder.cardAuthorTextView = (TextView) view.findViewById(R.id.cardAuthorTextView);
+                holder.cardbookCoverImageView = view.findViewById(R.id.cardBookCoverImageView);
+                holder.cardLabelTextView = view.findViewById(R.id.cardLabelTextView);
+                holder.cardTitleTextView = view.findViewById(R.id.cardTitleTextView);
+                holder.cardAuthorTextView = view.findViewById(R.id.cardAuthorTextView);
 
 
                 view.setTag(holder);
@@ -71,8 +77,9 @@ public class BookAdapter extends ArrayAdapter<Book> {
                 holder = (ViewHolder) view.getTag();
             }
 
+            holder.cardbookCoverImageView.setImageResource(R.drawable.book0);
 
-
+            //add book data to layout views
             if (position == 0) {
                 holder.cardLabelTextView.setText(R.string.currentBookLabel);
             }

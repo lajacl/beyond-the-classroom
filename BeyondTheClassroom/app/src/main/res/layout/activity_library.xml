@@ -5,16 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.bytc.beyondtheclassroom.LibraryActivity"
-    >
+    tools:context="us.bytc.beyondtheclassroom.LibraryActivity">
 
     <ListView
         android:id="@+id/libraryListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true" android:padding="20dp">
+        android:layout_above="@id/bottomNavigationBar"
+        android:layout_below="@id/appLogo"
+        android:padding="15dp">
 
     </ListView>
+
     <LinearLayout
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
