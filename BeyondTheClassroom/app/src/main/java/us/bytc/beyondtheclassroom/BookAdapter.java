@@ -58,7 +58,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
         final ViewHolder holder;
         try {
             if (convertView == null) {
-                view = inflater.inflate(R.layout.activity_library, null);
+                view = inflater.inflate(R.layout.library_book_card, null);
                 holder = new ViewHolder();
 
                 holder.cardLabelTextView = (TextView) view.findViewById(R.id.cardLabelTextView);
