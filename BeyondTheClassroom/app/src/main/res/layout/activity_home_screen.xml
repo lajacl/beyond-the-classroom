@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.bytc.beyondtheclassroom.ParentHomeScreen"
-    >
+    tools:context="us.bytc.beyondtheclassroom.HomeScreenActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -21,7 +20,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/blackborder">
+        android:background="d1d3d4">
 
         <ImageView
             android:layout_width="75dp"
@@ -32,3 +31,4 @@
     </LinearLayout>
 
 </RelativeLayout>
+
