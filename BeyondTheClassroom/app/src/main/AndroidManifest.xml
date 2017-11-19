@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="us.bytc.beyondtheclassroom">
 
+    <uses-permission android:name=".permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,6 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".BTCHomeScreen" />
         <activity android:name=".ParentSignUpActivity" />
         <activity android:name=".TeacherSignUpActivity" />
         <activity android:name=".UserLoginActivity">

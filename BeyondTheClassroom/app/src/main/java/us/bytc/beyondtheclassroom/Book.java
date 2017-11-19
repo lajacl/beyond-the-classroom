@@ -6,21 +6,23 @@ package us.bytc.beyondtheclassroom;
 
 public class Book {
     //@JsonProperty("title")
-    String title;
+    private String title;
     //@JsonProperty("Page")
-    int pages;
+    private int pages;
     //@JsonProperty("id")
-    String id;
+    private String id;
     //@JsonProperty("etag")
-    String etag;
+    private String etag;
     //@JsonProperty("selfLink")
-    String selfLink;
+    private String selfLink;
     //@JsonProperty("authors")
-    String Author;
+    private String author;
     //@JsonProperty("publisher")
-    String Publisher;
+    private String publisher;
     //@JsonProperty("publishedDate")
-    String PublishDate;
+    private String publishDate;
+    //@JsonProperty("image_url")
+    private String imageUrl;
  }
 
 
