@@ -57,6 +57,7 @@ public class BookAdapter extends ArrayAdapter<Book>{
 
     }
 
+    //create a view for each item in the list of books
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
         final ViewHolder holder;
@@ -76,7 +77,6 @@ public class BookAdapter extends ArrayAdapter<Book>{
                 holder = (ViewHolder) view.getTag();
             }
 
-//            holder.cardbookCoverImageView.setImageResource(bookList.get(position).getBookReference());
             holder.cardbookCoverImageView.setImageResource(R.drawable.book0);
 
             //add book data to layout views
