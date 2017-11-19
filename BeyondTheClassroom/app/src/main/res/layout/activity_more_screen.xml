@@ -19,9 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/logoutText"
-        android:background="@drawable/roundedborderedbutton"
+        android:background="@drawable/roundedlogoutbutton"
         android:textSize="12sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:id="@+id/logoutButton"
         android:layout_above="@id/bottomNavigationBar"
         android:layout_centerInParent="true"
@@ -36,34 +36,38 @@
         android:id="@+id/bottomNavigationBar">
 
         <ImageView
+            android:id="@+id/moreScreenStatsButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:src="@drawable/stats_logo"
             android:contentDescription="@string/statsTitle"/>
 
         <ImageView
+            android:id="@+id/moreScreenScheduleButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:src="@drawable/schedule_logo"
             android:contentDescription="@string/statsTitle"/>
 
         <ImageView
+            android:id="@+id/moreScreenReadButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:src="@drawable/read_logo"
             android:contentDescription="@string/statsTitle"/>
 
         <ImageView
+            android:id="@+id/moreScreenLibraryButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:src="@drawable/library_logo"
             android:contentDescription="@string/statsTitle"/>
 
         <ImageView
-            android:id="@+id/homeScreenMoreButton"
+            android:id="@+id/moreScreenBackButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:src="@drawable/more_logo"
+            android:src="@drawable/gohome_icon"
             android:contentDescription="@string/statsTitle"/>
 
     </LinearLayout>

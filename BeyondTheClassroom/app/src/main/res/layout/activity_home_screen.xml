@@ -30,24 +30,28 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/homeScreenStatsButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"
             android:src="@drawable/stats_logo"/>
 
         <ImageView
+            android:id="@+id/homeScreenScheduleButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"
             android:src="@drawable/schedule_logo"/>
 
         <ImageView
+            android:id="@+id/homeScreenReadButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"
             android:src="@drawable/read_logo"/>
 
         <ImageView
+            android:id="@+id/homeScreenLibraryButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:contentDescription="@string/statsTitle"

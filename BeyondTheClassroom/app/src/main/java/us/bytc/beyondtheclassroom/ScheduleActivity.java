@@ -5,35 +5,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.google.firebase.auth.FirebaseAuth;
-
-public class MoreScreenActivity extends AppCompatActivity {
+public class ScheduleActivity extends AppCompatActivity {
 
     private Context mContext = this;
-
-    private FirebaseAuth mFirebaseAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_more_screen);
+        setContentView(R.layout.activity_schedule);
 
-        Button logoutButton = findViewById(R.id.logoutButton);
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mFirebaseAuth.signOut();
-
-                Intent intent = new Intent(mContext, UserLoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageView goBackButton = findViewById(R.id.moreScreenBackButton);
-        goBackButton.setOnClickListener(new View.OnClickListener() {
+        ImageView toHomeScreen = findViewById(R.id.scheduleScreenGoBackButton);
+        toHomeScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, HomeScreenActivity.class);
@@ -41,16 +25,16 @@ public class MoreScreenActivity extends AppCompatActivity {
             }
         });
 
-        ImageView toLibraryScreen = findViewById(R.id.moreScreenLibraryButton);
-        toLibraryScreen.setOnClickListener(new View.OnClickListener() {
+        ImageView toMoreScreen = findViewById(R.id.scheduleScreenMoreButton);
+        toMoreScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, LibraryActivity.class);
+                Intent intent = new Intent(mContext, MoreScreenActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageView toReadScreen = findViewById(R.id.moreScreenReadButton);
+        ImageView toReadScreen = findViewById(R.id.scheduleScreenReadButton);
         toReadScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,16 +43,16 @@ public class MoreScreenActivity extends AppCompatActivity {
             }
         });
 
-        ImageView toScheduleScreen = findViewById(R.id.moreScreenScheduleButton);
-        toScheduleScreen.setOnClickListener(new View.OnClickListener() {
+        ImageView toLibraryScreen = findViewById(R.id.scheduleScreenLibraryButton);
+        toLibraryScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, ScheduleActivity.class);
+                Intent intent = new Intent(mContext, LibraryActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageView toStatsScreen = findViewById(R.id.moreScreenStatsButton);
+        ImageView toStatsScreen = findViewById(R.id.scheduleScreenStatsButton);
         toStatsScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
