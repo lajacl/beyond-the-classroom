@@ -66,4 +66,25 @@
 
 
     <string name="scheduleTodayText"><b>Today:</b></string>
+    <string name="twopm">2 PM:</string>
+    <string name="name1">Harris, Kingston</string>
+    <string name="threepm">3 PM:</string>
+    <string name="name2">Parker, Tory</string>
+    <string name="fourpm">4 PM:</string>
+    <string name="name3">Hall, Dave</string>
+    <string name="fivepm">5 PM:</string>
+    <string name="name4">Sheats, Riley</string>
+    <string name="allottedTimeText"><b>30 Min.</b></string>
+
+
+    <string name="dateForStatsText"><u>Date:</u></string>
+    <string name="titleForStatsText"><u>Title:</u></string>
+    <string name="minRecordedForStatsText"><u>Min Rec.</u></string>
+
+    <string name="exampleDateText">11/19/17</string>
+    <string name="exampleBookTitle">The Secret Garden</string>
+    <string name="exampleTimeReading">30 Minutes</string>
+
+
+
 </resources>
