@@ -28,23 +28,23 @@ public class LibraryActivity extends AppCompatActivity {
         book.setImageLink("http://books.google.com/books/content?id=84A2AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book);
 
-  /*      Book book2 = new Book();
-        book2.setTitle("");
-        book2.setAuthor("");
-        book2.setImageLink("http://books.google.com/books/content?id=aeABAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
+        Book book2 = new Book();
+        book2.setTitle("Bees Like Flowers");
+        book2.setAuthor("Rebecca Bielawski");
+        book2.setImageLink("http://books.google.com/books/content?id=Y56aCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book2);
 
         Book book3 = new Book();
-        book3.setTitle("");
-        book3.setAuthor("");
-        book3.setImageLink("");
+        book3.setTitle("Rootabaga Stories");
+        book3.setAuthor("Carl Sandburg");
+        book3.setImageLink("http://books.google.com/books/content?id=EEMeAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
         bookList.add(book3);
 
         Book book4 = new Book();
-        book4.setTitle("");
-        book4.setAuthor("");
-        book4.setImageLink("");
-        bookList.add(book4);*/
+        book4.setTitle("The Cricket on the Hearth");
+        book4.setAuthor("Charles Dickens");
+        book4.setImageLink("http://books.google.com/books/content?id=kykEAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api");
+        bookList.add(book4);
 
         return bookList;
     }
