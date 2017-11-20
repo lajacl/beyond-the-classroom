@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context="us.bytc.beyondtheclassroom.LottieAnimation">
 
-    <com.airbnb.lottie.LottieAnimationView
+    <!--<com.airbnb.lottie.LottieAnimationView
         app:lottie_fileName=".json"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        />-->
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dev_console_1024x500"/>
 
 </LinearLayout>

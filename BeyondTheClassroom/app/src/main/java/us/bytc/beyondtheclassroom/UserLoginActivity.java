@@ -38,7 +38,8 @@ public class UserLoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null){
-                Intent intent = new Intent(mContext, HomeScreenActivity.class);
+            finish();
+                Intent intent = new Intent(mContext, LottieAnimation.class);
                 startActivity(intent);
         }
 
@@ -85,6 +86,7 @@ public class UserLoginActivity extends AppCompatActivity {
                         Toast.makeText(UserLoginActivity.this, "Unable to Login",Toast.LENGTH_LONG).show();
 
                     }
+                    finish();
                     Intent intent = new Intent(mContext, HomeScreenActivity.class);
                     startActivity(intent);
                 }
