@@ -1,3 +1,4 @@
+/*
 package us.bytc.beyondtheclassroom;
 
 import java.util.ArrayList;
@@ -15,10 +16,6 @@ import java.net.URL;
 
 import us.bytc.beyondtheclassroom.models.Book;
 
-
-/**
- * Created by Beast on 11/18/2017.
- */
 
 public class BookLib {
 
@@ -123,3 +120,33 @@ public List<Book> JSonTOBookObject(String booklist){
     return _booklist;
 }
 }
+
+public class LocatrFragment extends SupportMapFragment {
+    private static final String TAG = "BookLib";
+    private GoogleApiClient mClient;
+    private Bitmap mMapImage;
+    private Book mBook;
+    private Location mCurrentLocation;
+
+    private class SearchTask extends AsyncTask<Location, Void, Void> {
+        private Bitmap mBitmap;
+        private GalleryItem mGalleryItem;
+        private Location mLocation;
+
+        @Override
+        protected Void doInBackground(Location... params) {
+            mLocation = params[0];
+            BookService bookService = new BookService();
+            ...
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            mMapImage = mBitmap;
+            mMapItem = mGalleryItem;
+            mCurrentLocation = mLocation;
+        }
+
+    }
+}
+*/
